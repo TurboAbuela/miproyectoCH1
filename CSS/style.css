@@ -3,65 +3,76 @@ body {
     margin: 0;
 }
 
- html {
+html {
     scroll-behavior: smooth;
 }
 
-header {
-    background: url(/Imagenes/Street.jpg);
-    background-size: cover;
-    height: 250px;
-    overflow: hidden;
-    opacity: 80%;
+.navbar {
+    background-color: black;
 }
 
-.inicio1 {
-    color: rgb(2, 0, 2);
-    font-family: 'Fasthand', cursive;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 5rem;
-    text-shadow: 3px 6px rgb(147, 115, 160);
-}
-
-.inicio2 {
-    color: black;
-    font-family: 'Courier New', Courier, monospace, cursive;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: 1px 3px rgb(9, 0, 10);
-}
-
-.menu1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;    
-}
-
-.menu1 ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu1 li {
-    margin: 0 70px;
-}
-
-.menu1 a {
+.navbar span {
     color: pink;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
 }
 
-.menu1 a:hover {
-    color:rgb(155, 106, 190);
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler i{
+    color: pink;
+}
+
+.navbar .nav-item .nav-link {
+    color: pink;
+}
+
+.jumbotron {
+    background-image: url(/imagenes/Street.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;   
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.jumbotron .container p {
+    background: black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 5px pink;
+    color: pink;
+    text-shadow: 1px 0px 0px black;
+    /* para cuando decida que escribiren la portada */
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* finaliza escrito portada */
+} 
+
+.jumbotron .container h1 {
+    color: pink;
+    font-family: 'Fasthand';
+    font-size: 80px;
+    border-color: pink;
+    text-shadow: 4px 4px 2px black;
+}
+
+.jumbotron .btn {
+    background-color: black;
+    text-decoration: solid;
+    border-radius: 50px;
+    color: pink;
+    border-color: pink;
+    box-shadow: 0px 0px 0px 5px pink;
+}
+
+.jumbotron .btn:hover {
+    background-color: rgb(155, 106, 190);
+}
+
+.tg {
+    background-color: block;
+    text-align: center;
 }
 
 .sec1 {
@@ -70,11 +81,19 @@ header {
     padding: 10px;
 }
 
-.itemu {
+.itemp1 {
     padding-bottom: 0%;
 }
 
-.itemd {
+.itemp2 {
+    padding-top: 0%;
+}
+
+.itemg1 {
+    padding-bottom: 0%;
+}
+
+.itemg2 {
     padding-top: 0%;
 }
 
@@ -82,8 +101,8 @@ section img{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: .6;
-    transition: .5s ease;
+    opacity: 0.6;
+    transition: 0.5s ease;
 }
 
 section img:hover{
@@ -103,7 +122,7 @@ footer {
     background-color:black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: pink;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     text-transform: capitalize;
     justify-content: center;
@@ -128,7 +147,7 @@ footer {
     color:rgb(238, 209, 235);
     padding: 10px;
     background-color: black;
-    border-radius: 50%;
+    border-radius: 35%;
     border: 3px solid rgb(238, 209, 235);   
 }
 
